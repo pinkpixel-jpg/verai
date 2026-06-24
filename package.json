@@ -1,0 +1,12 @@
+{
+  "name": "verai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "generate:prd": "node scripts/generate_prd.js",
+    "generate:trd": "node scripts/generate_trd.js"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
