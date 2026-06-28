@@ -41,3 +41,24 @@ Create a blank Word document:
 ```powershell
 python scripts/create_blank_docx.py
 ```
+
+Run services (scaffold):
+
+```powershell
+# Install root deps (docx generator)
+npm install
+
+# Install backend deps and run locally
+cd backend
+npm install
+node index.js
+
+# In another shell: run the ML mock service
+cd ml
+pip install -r requirements.txt
+python -m uvicorn app:app --host 0.0.0.0 --port 8001
+
+# Or use docker-compose
+docker-compose up --build
+```
+

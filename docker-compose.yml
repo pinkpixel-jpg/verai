@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - ml
+    environment:
+      - NODE_ENV=production
+
+  ml:
+    build: ./ml
+    ports:
+      - "8001:8001"

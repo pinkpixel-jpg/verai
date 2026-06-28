@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "generate:prd": "node scripts/generate_prd.js",
-    "generate:trd": "node scripts/generate_trd.js"
+    "generate:trd": "node scripts/generate_trd.js",
+    "start:backend": "node backend/index.js",
+    "docker:up": "docker-compose up --build -d",
+    "docker:down": "docker-compose down"
   },
   "dependencies": {
     "docx": "^9.7.1"
